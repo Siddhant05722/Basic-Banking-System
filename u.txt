@@ -1,0 +1,7 @@
+Aggregate fuctions is max min count sum.
+
+select max(salary) from employee order by salary;
+
+select salary from employee group by salary limit3;
+
+groupby = UNION

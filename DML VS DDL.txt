@@ -1,0 +1,65 @@
+-- selecting all columns
+select * from employee;
+
+—-— selecting specific columns
+select firstname, lastname from employee;
+
+-—- select by applying a where clause (filter condition)
+select * from employee where age > 29;
+
+select * from employee where firstname='maneesh';
+
+by default it is case insensitive.
+
+select * from employee where binary firstname='maneesh';
+
+—- the above statement will match the exact case and is
+case sensitive. 
+
+
+—-Alias
+select firstname as name, Lastname as surname from
+emp Loyee;
+
+--update
+update employee set lastname='sinha' where
+firstname='maneesh'
+
+--Delete
+delete from employee where id = 3;
+delete from employee;
+
+--alter command
+
+alter is to alter the structure of the table.
+
+alter table employee add column jobtitle varchar(50);
+
+alter table employee drop column jobtitle;
+
+alter table employee modify column firstname varchar(30);
+
+alter table employee drop primary key;
+
+alter table employee add primary key(id);
+
+ 
+
+ 
+
+--DDL vs DML
+
+Data Definition Language - deals with table structure
+
+Create, Alter, Drop -— DDL commands
+
+Data Manipulation Language — here we deal with the data
+directly.
+
+insert, update, delete — DML commands
+I
+delete from employee; —-DML
+
+Truncate also removes all records — DDL
+
+truncate internally drops the table and recreates it.

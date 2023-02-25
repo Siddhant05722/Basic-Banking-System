@@ -1,0 +1,28 @@
+CRUD Operations
+
+CREATE - INSERT statement
+READ - SELECT statement
+UPDATE - UPDATE statement
+DELETE - DELETE statement
+
+Example - 
+
+employee table
+
+CREATE TABLE employee(firstname varchar(20),
+			middlename varchar(20),
+			lastname varchar(20),
+			age int,
+			salary int,
+			location varchar(20)
+			);
+
+To insert value - 
+
+INSERT INTO employee(firstname,lastname,age,salary,location) VALUES ('Sid','Sri',21,80000,'Delhi');
+
+To put not null value in the table use NOT NULL Keyword.
+
+To put default value - 
+
+location varchar(20) NOT NULL DEFAULT 'banglore'.

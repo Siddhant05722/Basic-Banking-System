@@ -1,0 +1,38 @@
+Primary Key - 
+
+For a primary key NULL and repeated values are not allowed.
+Uniquely identify each record in the table.
+
+CREATE TABLE employee(id int PRIMARY KEY AUTO-INCREMENT,
+			firstname varchar(20),
+			middlename varchar(20),
+			lastname varchar(20),
+			age int,
+			salary int,
+			location varchar(20) DEFAULT 'Bangalore'
+			);
+
+Auto-increament - 
+
+For ranking.
+
+Unique Key - 
+
+You can have only one primary key and it can't hold any NULL.
+
+We should use primary key when we have to uniquely identify each record.
+
+Unique key can hold null.
+
+Example - Unique key can hold any number of NULL values.
+
+We can have only one primary key whereas multiple unique key in Table.
+
+CREATE TABLE employee(id int UNIQUE KEY AUTO-INCREMENT,
+			firstname varchar(20) UNIQUE KEY,
+			middlename varchar(20),
+			lastname varchar(20),
+			age int,
+			salary int,
+			location varchar(20) DEFAULT 'Bangalore'
+			);

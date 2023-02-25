@@ -1,0 +1,36 @@
+Database - A collection of data and it holds the data in the form of table.
+
+Table - Table holds the data in the form of rows and columns.
+	-Similar to Excel Spreadsheet.
+
+Database provides capability to ascess and manipulate data.
+
+2 Types of Databases-
+
+1. RDBMS - Rows & Columns and also tables have relationship between them.
+	Mysql
+	Sql Server
+	PostreSQL
+	SQLite
+	MariaDB
+
+2.NOSQL Database- Key value, Document, Graph.
+	Hbase
+	MongoDB
+	Cassandra
+
+SQL - Structured Query Language and is used to carry RDB.
+
+To create a Database - CREATE DATABASE database_name;
+To see the which database are you selected - SELECT DATABASE();
+To see Databases - SHOW DATABASES;
+To do work on Database - USE database_name;
+To create table in a database - CREATE TABLE table_name(Datatypes followed by Column_names)
+
+Example - CREATE TABLE employee(name varchar(50),
+				age int
+				salary int) Varchar upto 255.
+
+To see schema of the table - DESC table_name;
+To delete the table from the database - DROP TABLE table_name;
+To delete database - DROP DATABASE database_name;
